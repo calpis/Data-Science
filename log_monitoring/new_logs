@@ -1,0 +1,296 @@
+,_time,_raw
+0,2017-08-14 02:59:24.194 PDT,"ERROR 2017-08-14 02:59:24,194 [[commerce-order-2.2.5].jettyConnector.receiver.2709] Error :: After calling CAS Order Response Payload ::: :<?xml version=""1.0"" encoding=""UTF-8"" standalone=""yes""?><Errors xmlns=""http://schema.intuit.com/platform/common/error/v2""><error><code>ORDR-201530</code><type>CLIENT</type><message>Payment Auth service failed due to invalid Payment Information.</message><detail>Payment Auth service failed due to invalid Payment Information.</detail></error></Errors>"
+1,2017-08-14 02:53:20.465 PDT,"ERROR 2017-08-14 02:53:20,465 [[commerce-order-2.2.5].jettyConnector.receiver.2705] Error :: After calling CAS Order Response Payload ::: :<?xml version=""1.0"" encoding=""UTF-8"" standalone=""yes""?><Errors xmlns=""http://schema.intuit.com/platform/common/error/v2""><error><code>ORDR-201530</code><type>CLIENT</type><message>Payment Auth service failed due to invalid Payment Information.</message><detail>Payment Auth service failed due to invalid Payment Information.</detail></error></Errors>"
+2,2017-08-14 02:52:40.441 PDT,"ERROR 2017-08-14 02:52:40,441 [[commerce-order-2.2.5].jettyConnector.receiver.2708] Error :: After calling CAS Order Response Payload ::: :<?xml version=""1.0"" encoding=""UTF-8"" standalone=""yes""?><Errors xmlns=""http://schema.intuit.com/platform/common/error/v2""><error><code>ORDR-201530</code><type>CLIENT</type><message>Payment Auth service failed due to invalid Payment Information.</message><detail>Payment Auth service failed due to invalid Payment Information.</detail></error></Errors>"
+3,2017-08-14 02:52:06.904 PDT,"ERROR 2017-08-14 02:52:06,904 [[commerce-order-2.2.5].jettyConnector.receiver.2722] Error :: After calling CAS Order Response Payload ::: :<?xml version=""1.0"" encoding=""UTF-8"" standalone=""yes""?><Errors xmlns=""http://schema.intuit.com/platform/common/error/v2""><error><code>ORDR-201530</code><type>CLIENT</type><message>Payment Auth service failed due to invalid Payment Information.</message><detail>Payment Auth service failed due to invalid Payment Information.</detail></error></Errors>"
+4,2017-08-14 02:46:45.124 PDT,"ERROR 2017-08-14 02:46:45,124 [[commerce-entitlement-2.1.0].ConnectorWithoutMuleSession.receiver.5266] com.intuit.platform.services.commerce.entitlement.transformer.EntitlementOfferingResTransformer: No EntitledOffering received from CAS"
+5,2017-08-14 02:46:43.016 PDT,"ERROR 2017-08-14 02:46:43,016 [[commerce-entitlement-2.1.0].ConnectorWithoutMuleSession.receiver.5342] After calling CAS Get EntitledOfferings Response Payload :: Errors: <?xml version=""1.0"" encoding=""UTF-8"" standalone=""yes""?><Errors xmlns=""http://schema.intuit.com/platform/common/error/v2""><error><code>ENT-202103</code><type>CLIENT</type><message>Required Parameter LicenseNumber is Missing</message><detail>Required Parameter LicenseNumber is Missing</detail></error></Errors>"
+6,2017-08-14 02:45:52.331 PDT,"ERROR 2017-08-14 02:45:52,331 [[commerce-entitlement-2.1.0].ConnectorWithoutMuleSession.receiver.5309] com.intuit.platform.services.commerce.entitlement.transformer.EntitlementOfferingResTransformer: No EntitledOffering received from CAS"
+7,2017-08-14 02:45:45.212 PDT,"ERROR 2017-08-14 02:45:45,212 [[commerce-entitlement-2.1.0].ConnectorWithoutMuleSession.receiver.5309] com.intuit.platform.services.commerce.entitlement.transformer.EntitlementOfferingResTransformer: No EntitledOffering received from CAS"
+8,2017-08-14 02:45:20.043 PDT,"ERROR 2017-08-14 02:45:20,043 [[commerce-entitlement-2.1.0].ConnectorWithoutMuleSession.receiver.5266] com.intuit.platform.services.commerce.entitlement.transformer.EntitlementOfferingResTransformer: No EntitledOffering received from CAS"
+9,2017-08-14 02:45:14.191 PDT,"ERROR 2017-08-14 02:45:14,191 [[commerce-entitlement-2.1.0].ConnectorWithoutMuleSession.receiver.5296] com.intuit.platform.services.commerce.entitlement.transformer.EntitlementOfferingResTransformer: No EntitledOffering received from CAS"
+10,2017-08-14 02:43:48.875 PDT,"ERROR 2017-08-14 02:43:48,875 [[commerce-entitlement-2.1.0].ConnectorWithoutMuleSession.receiver.5341] After calling CAS Get EntitledOfferings Response Payload :: Errors: <?xml version=""1.0"" encoding=""UTF-8"" standalone=""yes""?><Errors xmlns=""http://schema.intuit.com/platform/common/error/v2""><error><code>ENT-202103</code><type>CLIENT</type><message>Required Parameter LicenseNumber is Missing</message><detail>Required Parameter LicenseNumber is Missing</detail></error></Errors>"
+11,2017-08-14 02:40:35.619 PDT,"ERROR 2017-08-14 02:40:35,619 [[commerce-entitlement-2.1.0].ConnectorWithoutMuleSession.receiver.5296] org.mule.api.processor.LoggerMessageProcessor: Entitled Offer Service REST_Sub_Flow_Exception_Strategy"
+12,2017-08-14 02:40:35.619 PDT,"ERROR 2017-08-14 02:40:35,619 [[commerce-entitlement-2.1.0].ConnectorWithoutMuleSession.receiver.5296] org.mule.exception.CatchMessagingExceptionStrategy: 
+********************************************************************************
+Message               : Failed to route event via endpoint: DefaultOutboundEndpoint{endpointUri=http://ecommerceservices.platform.intuit.net:80/entitlement-rest/v1/entitledofferings?licenseId=548625011618486&entitlementId=997094, connector=HttpConnector
+{
+  name=ConnectorWithoutMuleSession
+  lifecycle=start
+  this=2dad6e55
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[http]
+  serviceOverrides=
+    session.handler=org.mule.session.NullSessionHandler
+    message.factory=com.intuit.platform.services.commerce.entitlement.util.CustomHttpMuleMessageFactory
+}
+,  name='endpoint.http.ecommerceservices.platform.intuit.net.80.entitlement.rest.v1.entitledofferings.licenseId.548625011618486.entitlementId.997094', mep=REQUEST_RESPONSE, properties={entitlementId=997094, exceptionOnMessageError=true, licenseId=548625011618486, http.method=GET, Content-Type=text/xml}, transactionConfig=Transaction{factory=null, action=INDIFFERENT, timeout=0}, deleteUnacceptedMessages=false, initialState=started, responseTimeout=23000, endpointEncoding=UTF-8, disableTransportTransformer=false}. Message payload is of type: GetMethod
+Code                  : MULE_ERROR-42999
+--------------------------------------------------------------------------------
+Exception stack is:
+1. connect timed out (java.net.SocketTimeoutException)
+  java.net.PlainSocketImpl:-2 (null)
+2. The host did not accept the connection within timeout of 2000 ms (org.apache.commons.httpclient.ConnectTimeoutException)
+  org.apache.commons.httpclient.protocol.ReflectionSocketFactory:155 (null)
+3. Failed to route event via endpoint: DefaultOutboundEndpoint{endpointUri=http://ecommerceservices.platform.intuit.net:80/entitlement-rest/v1/entitledofferings?licenseId=548625011618486&entitlementId=997094, connector=HttpConnector
+{
+  name=ConnectorWithoutMuleSession
+  lifecycle=start
+  this=2dad6e55
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[http]
+  serviceOverrides=
+    session.handler=org.mule.session.NullSessionHandler
+    message.factory=com.intuit.platform.services.commerce.entitlement.util.CustomHttpMuleMessageFactory
+}
+,  name='endpoint.http.ecommerceservices.platform.intuit.net.80.entitlement.rest.v1.entitledofferings.licenseId.548625011618486.entitlementId.997094', mep=REQUEST_RESPONSE, properties={entitlementId=997094, exceptionOnMessageError=true, licenseId=548625011618486, http.method=GET, Content-Type=text/xml}, transactionConfig=Transaction{factory=null, action=INDIFFERENT, timeout=0}, deleteUnacceptedMessages=false, initialState=started, responseTimeout=23000, endpointEncoding=UTF-8, disableTransportTransformer=false}. Message payload is of type: GetMethod (org.mule.api.transport.DispatchException)
+  org.mule.transport.http.HttpClientMessageDispatcher:151 (http://www.mulesoft.org/docs/site/current3/apidocs/org/mule/api/transport/DispatchException.html)
+--------------------------------------------------------------------------------
+Root Exception stack trace:
+java.net.SocketTimeoutException: connect timed out
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+    + 3 more (set debug level logging or '-Dmule.verbose.exceptions=true' for everything)
+********************************************************************************"
+13,2017-08-14 02:34:51.089 PDT,"ERROR 2017-08-14 02:34:51,089 [[commerce-enterpriseaccount-2.1.0].connector.http.mule.default.receiver.6355] org.mule.api.processor.LoggerMessageProcessor: 3b01a6a7-fdc2-a5f1-870a-1b6f2c45d63d:AccountService Main Flow - logging error message"
+14,2017-08-14 02:34:51.086 PDT,"ERROR 2017-08-14 02:34:51,086 [[commerce-enterpriseaccount-2.1.0].connector.http.mule.default.receiver.6355] com.intuit.platform.services.commerce.account.AccountServiceImpl: 3b01a6a7-fdc2-a5f1-870a-1b6f2c45d63d:Exception --> getAccountsebpi.account.unauthorizedErrorUnauthorized Request"
+15,2017-08-14 02:31:10.304 PDT,"ERROR 2017-08-14 02:31:10,304 [[commerce-billingprofiles-2.0.5].jettyConnector.receiver.6323] com.intuit.platform.services.commerce.billingprofile.util.BillingProfilesServiceUtil: :****Throwing error as the paymant Authorization failed : CLIENT_ERROR"
+16,2017-08-14 02:31:10.304 PDT,"ERROR 2017-08-14 02:31:10,304 [[commerce-billingprofiles-2.0.5].jettyConnector.receiver.6323] com.intuit.platform.services.commerce.payauth.transformer.PaymentAuthorizationResponseTransformer: :**********Payauth Service response Error desc : Pickup"
+17,2017-08-14 02:30:13.548 PDT,"ERROR 2017-08-14 02:30:13,548 [[commerce-entitlement-2.1.0].ConnectorWithoutMuleSession.receiver.5338] After calling CAS Get EntitledOfferings Response Payload :: Errors: <?xml version=""1.0"" encoding=""UTF-8"" standalone=""yes""?><Errors xmlns=""http://schema.intuit.com/platform/common/error/v2""><error><code>ENT-202103</code><type>CLIENT</type><message>Required Parameter LicenseNumber is Missing</message><detail>Required Parameter LicenseNumber is Missing</detail></error></Errors>"
+18,2017-08-14 02:27:49.457 PDT,"ERROR 2017-08-14 02:27:49,457 [[commerce-order-2.2.5].jettyConnector.receiver.2719] Error :: After calling CAS Order Response Payload ::: :<?xml version=""1.0"" encoding=""UTF-8"" standalone=""yes""?><Errors xmlns=""http://schema.intuit.com/platform/common/error/v2""><error><code>ORDR-201200</code><type>SERVER</type><message>Quote Call Failed</message></error></Errors>"
+19,2017-08-14 02:27:05.767 PDT,"ERROR 2017-08-14 02:27:05,767 [[commerce-order-2.2.5].jettyConnector.receiver.2707] Error :: After calling CAS Order Response Payload ::: :<?xml version=""1.0"" encoding=""UTF-8"" standalone=""yes""?><Errors xmlns=""http://schema.intuit.com/platform/common/error/v2""><error><code>ORDR-201530</code><type>CLIENT</type><message>Payment Auth service failed due to invalid Payment Information.</message><detail>Payment Auth service failed due to invalid Payment Information.</detail></error></Errors>"
+20,2017-08-14 02:25:44.264 PDT,"ERROR 2017-08-14 02:25:44,264 [[commerce-order-2.2.5].jettyConnector.receiver.2702] Error :: After calling CAS Order Response Payload ::: :<?xml version=""1.0"" encoding=""UTF-8"" standalone=""yes""?><Errors xmlns=""http://schema.intuit.com/platform/common/error/v2""><error><code>ORDR-201550</code><type>CLIENT</type><message>Payment Auth service failed due to invalid AVS.</message><detail>Payment Auth service failed due to invalid AVS.</detail></error></Errors>"
+21,2017-08-14 02:24:19.771 PDT,"ERROR 2017-08-14 02:24:19,771 [[commerce-order-2.2.5].jettyConnector.receiver.2701] Error :: After calling CAS Order Response Payload ::: :<?xml version=""1.0"" encoding=""UTF-8"" standalone=""yes""?><Errors xmlns=""http://schema.intuit.com/platform/common/error/v2""><error><code>ORDR-201550</code><type>CLIENT</type><message>Payment Auth service failed due to invalid AVS.</message><detail>Payment Auth service failed due to invalid AVS.</detail></error></Errors>"
+22,2017-08-14 02:23:49.077 PDT,"ERROR 2017-08-14 02:23:49,077 [[commerce-order-2.2.5].jettyConnector.receiver.2718] Error :: After calling CAS Order Response Payload ::: :<?xml version=""1.0"" encoding=""UTF-8"" standalone=""yes""?><Errors xmlns=""http://schema.intuit.com/platform/common/error/v2""><error><code>ORDR-201550</code><type>CLIENT</type><message>Payment Auth service failed due to invalid AVS.</message><detail>Payment Auth service failed due to invalid AVS.</detail></error></Errors>"
+23,2017-08-14 02:22:46.982 PDT,"ERROR 2017-08-14 02:22:46,982 [[commerce-entitlement-2.1.0].ConnectorWithoutMuleSession.receiver.5306] com.intuit.platform.services.commerce.entitlement.transformer.EntitlementOfferingResTransformer: No EntitledOffering received from CAS"
+24,2017-08-14 02:18:01.835 PDT,"ERROR 2017-08-14 02:18:01,835 [[commerce-entitlement-2.1.0].ConnectorWithoutMuleSession.receiver.5291] After calling CAS Get EntitledOfferings Response Payload :: Errors: <?xml version=""1.0"" encoding=""UTF-8"" standalone=""yes""?><Errors xmlns=""http://schema.intuit.com/platform/common/error/v2""><error><code>ENT-202106</code><type>CLIENT</type><message>CustomerAccountNumber provided is Invalid</message><detail>CustomerAccountNumber provided is Invalid</detail><moreInfo>CustomerAccountNumber provided is Invalid</moreInfo></error></Errors>"
+25,2017-08-14 02:17:06.236 PDT,"ERROR 2017-08-14 02:17:06,236 [[commerce-entitlement-2.1.0].ConnectorWithoutMuleSession.receiver.5303] com.intuit.platform.services.commerce.entitlement.transformer.EntitlementOfferingResTransformer: No EntitledOffering received from CAS"
+26,2017-08-14 02:15:00.955 PDT,"ERROR 2017-08-14 02:15:00,955 [[commerce-enterpriseaccount-2.1.0].connector.http.mule.default.receiver.6346] org.mule.api.processor.LoggerMessageProcessor: becfc259-35cd-ee53-dbaa-0c4386d256b6:Received failure From MDM"
+27,2017-08-14 02:08:33.055 PDT,"ERROR 2017-08-14 02:08:33,055 [[commerce-entitlement-2.1.0].ConnectorWithoutMuleSession.receiver.5257] After calling CAS Get EntitledOfferings Response Payload :: Errors: <?xml version=""1.0"" encoding=""UTF-8"" standalone=""yes""?><Errors xmlns=""http://schema.intuit.com/platform/common/error/v2""><error><code>ENT-202106</code><type>CLIENT</type><message>CustomerAccountNumber provided is Invalid</message><detail>CustomerAccountNumber provided is Invalid</detail><moreInfo>CustomerAccountNumber provided is Invalid</moreInfo></error></Errors>"
+28,2017-08-14 02:04:58.326 PDT,"ERROR 2017-08-14 02:04:58,326 [[commerce-entitlement-2.1.0].ConnectorWithoutMuleSession.receiver.5290] After calling CAS Get EntitledOfferings Response Payload :: Errors: <?xml version=""1.0"" encoding=""UTF-8"" standalone=""yes""?><Errors xmlns=""http://schema.intuit.com/platform/common/error/v2""><error><code>ENT-202106</code><type>CLIENT</type><message>CustomerAccountNumber provided is Invalid</message><detail>CustomerAccountNumber provided is Invalid</detail><moreInfo>CustomerAccountNumber provided is Invalid</moreInfo></error></Errors>"
+29,2017-08-14 02:01:43.234 PDT,"ERROR 2017-08-14 02:01:43,234 [[commerce-entitlement-2.1.0].ConnectorWithoutMuleSession.receiver.5256] After calling CAS Get EntitledOfferings Response Payload :: Errors: <?xml version=""1.0"" encoding=""UTF-8"" standalone=""yes""?><Errors xmlns=""http://schema.intuit.com/platform/common/error/v2""><error><code>ENT-202106</code><type>CLIENT</type><message>CustomerAccountNumber provided is Invalid</message><detail>CustomerAccountNumber provided is Invalid</detail><moreInfo>CustomerAccountNumber provided is Invalid</moreInfo></error></Errors>"
+30,2017-08-14 01:53:48.732 PDT,"ERROR 2017-08-14 01:53:48,732 [[commerce-enterpriseaccount-2.1.0].connector.http.mule.default.receiver.6498] org.mule.api.processor.LoggerMessageProcessor: cfe21a76-f471-9d19-5339-ecf6397decf5:Received failure From MDM"
+31,2017-08-14 01:42:40.164 PDT,"ERROR 2017-08-14 01:42:40,164 [[commerce-entitlement-2.1.0].ConnectorWithoutMuleSession.receiver.5325] After calling CAS Get EntitledOfferings Response Payload :: Errors: <?xml version=""1.0"" encoding=""UTF-8"" standalone=""yes""?><Errors xmlns=""http://schema.intuit.com/platform/common/error/v2""><error><code>ENT-202106</code><type>CLIENT</type><message>CustomerAccountNumber provided is Invalid</message><detail>CustomerAccountNumber provided is Invalid</detail><moreInfo>CustomerAccountNumber provided is Invalid</moreInfo></error></Errors>"
+32,2017-08-14 01:36:15.349 PDT,"ERROR 2017-08-14 01:36:15,349 [[commerce-globalsalestax-2.0.8].connector.http.mule.default.receiver.2806] org.mule.exception.CatchMessagingExceptionStrategy: :
+********************************************************************************
+Message               : Wrapper (java.lang.RuntimeException). Message payload is of type: String
+Code                  : MULE_ERROR-29999
+--------------------------------------------------------------------------------
+Exception stack is:
+1. null (com.intuit.platform.common.mule.error.exceptions.ErrorCollectionException)
+  com.intuit.platform.services.commerce.schemavalidation.ExtendedSchemaValidationFilter:222 (null)
+2. Wrapper (java.lang.RuntimeException)
+  com.intuit.platform.services.commerce.schemavalidation.ExtendedSchemaValidationFilter:222 (null)
+3. Wrapper (java.lang.RuntimeException). Message payload is of type: String (org.mule.api.MessagingException)
+  org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor:32 (http://www.mulesoft.org/docs/site/current3/apidocs/org/mule/api/MessagingException.html)
+--------------------------------------------------------------------------------
+Root Exception stack trace:
+com.intuit.platform.common.mule.error.exceptions.ErrorCollectionException
+	at com.intuit.platform.services.commerce.schemavalidation.ExtendedSchemaValidationFilter.setMultipleErrorMessageContext(ExtendedSchemaValidationFilter.java:222)
+	at com.intuit.platform.services.commerce.schemavalidation.ExtendedSchemaValidationFilter.accept(ExtendedSchemaValidationFilter.java:158)
+	at org.mule.routing.MessageFilter.accept(MessageFilter.java:91)
+    + 3 more (set debug level logging or '-Dmule.verbose.exceptions=true' for everything)
+********************************************************************************"
+33,2017-08-14 01:36:15.345 PDT,"ERROR 2017-08-14 01:36:15,345 [[commerce-globalsalestax-2.0.8].connector.http.mule.default.receiver.2806] com.intuit.platform.services.commerce.schemavalidation.ExtendedSchemaValidationFilter: :<?xml version=""1.0"" encoding=""UTF-8""?><ns1:globalSalesTax xmlns:ns1=""http://schema.intuit.com/platform/globalsalestax/v1""><salesTaxHeader><documentId>IOPPaycycle_8181763</documentId><documentDateTime>2017-08-12T00:00:00.000-07:00</documentDateTime><customer><customerId schemeName="""">8181763</customerId><customerInfo><businessName>8181763</businessName></customerInfo><billingAddress><addressInfo><city>Spencer</city><state>IA</state><postalCode>51301</postalCode><country>US</country></addressInfo><standardizeAddress>true</standardizeAddress><standardizedAddressInd>true</standardizedAddressInd></billingAddress></customer><salesContext><salesOrganization>IOPPaycycle</salesOrganization><bizProcessType>Invoice</bizProcessType><transactionDateTime>2017-08-12T00:00:00.000-07:00</transactionDateTime><salesParty><salesBusiness><name>IOPPaycycle</name><companyId>170</companyId></salesBusiness></salesParty><taxInfoSpec><JurisdictionLevelDetails>false</JurisdictionLevelDetails></taxInfoSpec></salesContext><salesQuote><totalTransaction currency=""USD"">0.00</totalTransaction><totalTax currency=""USD"">0.00</totalTax><totalFreight currency=""USD"">0.00</totalFreight><totalCredit currency=""USD"">0.00</totalCredit></salesQuote></salesTaxHeader><salesTaxLines><salesTaxLine><lineNumber>1</lineNumber><orderItem><itemId>IOPBillingSalesTax</itemId><itemAttributes><productClass>OSB</productClass></itemAttributes></orderItem><orderQuantity uom=""Each"">1</orderQuantity><unitPrice><amount currency=""USD"">0.00</amount><perQuantity uom=""Each"">1</perQuantity></unitPrice><lineTotal currency=""USD"">0.00</lineTotal><tax><extendedTaxAmount currency=""USD"">0.00</extendedTaxAmount><unitTaxAmount currency=""USD"">0.00</unitTaxAmount><taxRate>0.0</taxRate><taxType>SalesTax</taxType></tax></salesTaxLine></salesTaxLines></ns1:globalSalesTax>"
+34,2017-08-14 01:36:15.345 PDT,"ERROR 2017-08-14 01:36:15,345 [[commerce-globalsalestax-2.0.8].connector.http.mule.default.receiver.2806] com.intuit.platform.services.commerce.schemavalidation.ExtendedSchemaValidationFilter: :SchemaValidationFilter rejected a message because it apparently failed to validate against the schema with multiple errors: 1"
+35,2017-08-14 01:36:15.249 PDT,"ERROR 2017-08-14 01:36:15,249 [[commerce-globalsalestax-2.0.8].connector.http.mule.default.receiver.2847] org.mule.exception.CatchMessagingExceptionStrategy: :
+********************************************************************************
+Message               : Wrapper (java.lang.RuntimeException). Message payload is of type: String
+Code                  : MULE_ERROR-29999
+--------------------------------------------------------------------------------
+Exception stack is:
+1. null (com.intuit.platform.common.mule.error.exceptions.ErrorCollectionException)
+  com.intuit.platform.services.commerce.schemavalidation.ExtendedSchemaValidationFilter:222 (null)
+2. Wrapper (java.lang.RuntimeException)
+  com.intuit.platform.services.commerce.schemavalidation.ExtendedSchemaValidationFilter:222 (null)
+3. Wrapper (java.lang.RuntimeException). Message payload is of type: String (org.mule.api.MessagingException)
+  org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor:32 (http://www.mulesoft.org/docs/site/current3/apidocs/org/mule/api/MessagingException.html)
+--------------------------------------------------------------------------------
+Root Exception stack trace:
+com.intuit.platform.common.mule.error.exceptions.ErrorCollectionException
+	at com.intuit.platform.services.commerce.schemavalidation.ExtendedSchemaValidationFilter.setMultipleErrorMessageContext(ExtendedSchemaValidationFilter.java:222)
+	at com.intuit.platform.services.commerce.schemavalidation.ExtendedSchemaValidationFilter.accept(ExtendedSchemaValidationFilter.java:158)
+	at org.mule.routing.MessageFilter.accept(MessageFilter.java:91)
+    + 3 more (set debug level logging or '-Dmule.verbose.exceptions=true' for everything)
+********************************************************************************"
+36,2017-08-14 01:36:15.244 PDT,"ERROR 2017-08-14 01:36:15,244 [[commerce-globalsalestax-2.0.8].connector.http.mule.default.receiver.2847] com.intuit.platform.services.commerce.schemavalidation.ExtendedSchemaValidationFilter: :<?xml version=""1.0"" encoding=""UTF-8""?><ns1:globalSalesTax xmlns:ns1=""http://schema.intuit.com/platform/globalsalestax/v1""><salesTaxHeader><documentId>IOPPaycycle_8181763</documentId><documentDateTime>2017-08-12T00:00:00.000-07:00</documentDateTime><customer><customerId schemeName="""">8181763</customerId><customerInfo><businessName>8181763</businessName></customerInfo><billingAddress><addressInfo><city>Spencer</city><state>IA</state><postalCode>51301</postalCode><country>US</country></addressInfo><standardizeAddress>true</standardizeAddress><standardizedAddressInd>true</standardizedAddressInd></billingAddress></customer><salesContext><salesOrganization>IOPPaycycle</salesOrganization><bizProcessType>Invoice</bizProcessType><transactionDateTime>2017-08-12T00:00:00.000-07:00</transactionDateTime><salesParty><salesBusiness><name>IOPPaycycle</name><companyId>170</companyId></salesBusiness></salesParty><taxInfoSpec><JurisdictionLevelDetails>false</JurisdictionLevelDetails></taxInfoSpec></salesContext><salesQuote><totalTransaction currency=""USD"">181.00</totalTransaction><totalTax currency=""USD"">0.00</totalTax><totalFreight currency=""USD"">0.00</totalFreight><totalCredit currency=""USD"">0.00</totalCredit></salesQuote></salesTaxHeader><salesTaxLines><salesTaxLine><lineNumber>1</lineNumber><orderItem><itemId>IOPBillingSalesTax</itemId><itemAttributes><productClass>OSB</productClass></itemAttributes></orderItem><orderQuantity uom=""Each"">1</orderQuantity><unitPrice><amount currency=""USD"">181.00</amount><perQuantity uom=""Each"">1</perQuantity></unitPrice><lineTotal currency=""USD"">181.00</lineTotal><tax><extendedTaxAmount currency=""USD"">0.00</extendedTaxAmount><unitTaxAmount currency=""USD"">0.00</unitTaxAmount><taxRate>0.0</taxRate><taxType>SalesTax</taxType></tax></salesTaxLine></salesTaxLines></ns1:globalSalesTax>"
+37,2017-08-14 01:36:15.244 PDT,"ERROR 2017-08-14 01:36:15,244 [[commerce-globalsalestax-2.0.8].connector.http.mule.default.receiver.2847] com.intuit.platform.services.commerce.schemavalidation.ExtendedSchemaValidationFilter: :SchemaValidationFilter rejected a message because it apparently failed to validate against the schema with multiple errors: 1"
+38,2017-08-14 01:29:55.218 PDT,"ERROR 2017-08-14 01:29:55,218 [[commerce-enterpriseaccount-2.1.0].connector.http.mule.default.receiver.6335] org.mule.api.processor.LoggerMessageProcessor: 320bbec0-42ff-f96e-b667-d7c5e8e7d50a:AccountService Main Flow - logging error message"
+39,2017-08-14 01:29:55.216 PDT,"ERROR 2017-08-14 01:29:55,216 [[commerce-enterpriseaccount-2.1.0].connector.http.mule.default.receiver.6335] com.intuit.platform.services.commerce.account.AccountServiceImpl: 320bbec0-42ff-f96e-b667-d7c5e8e7d50a:Exception --> getAccountsebpi.account.unauthorizedErrorUnauthorized Request"
+40,2017-08-14 01:27:37.075 PDT,"ERROR 2017-08-14 01:27:37,075 [[commerce-enterpriseaccount-2.1.0].connector.http.mule.default.receiver.6335] org.mule.api.processor.LoggerMessageProcessor: 6dc10132-50ad-78dc-4448-350253329de3:AccountService Main Flow - logging error message"
+41,2017-08-14 01:27:37.071 PDT,"ERROR 2017-08-14 01:27:37,071 [[commerce-enterpriseaccount-2.1.0].connector.http.mule.default.receiver.6335] com.intuit.platform.services.commerce.account.AccountServiceImpl: 6dc10132-50ad-78dc-4448-350253329de3:Exception --> getAccountsebpi.account.unauthorizedErrorUnauthorized Request"
+42,2017-08-14 01:27:29.313 PDT,"ERROR 2017-08-14 01:27:29,313 [[commerce-enterpriseaccount-2.1.0].connector.http.mule.default.receiver.6568] org.mule.api.processor.LoggerMessageProcessor: b8f0da82-371b-9bd2-695c-f8f30e8ad4bd:AccountService Main Flow - logging error message"
+43,2017-08-14 01:27:29.311 PDT,"ERROR 2017-08-14 01:27:29,311 [[commerce-enterpriseaccount-2.1.0].connector.http.mule.default.receiver.6568] com.intuit.platform.services.commerce.account.AccountServiceImpl: b8f0da82-371b-9bd2-695c-f8f30e8ad4bd:Exception --> getAccountsebpi.account.unauthorizedErrorUnauthorized Request"
+44,2017-08-14 01:25:27.731 PDT,"ERROR 2017-08-14 01:25:27,731 [[commerce-entitlement-2.1.0].ConnectorWithoutMuleSession.receiver.5293] com.intuit.platform.services.commerce.entitlement.transformer.EntitlementOfferingResTransformer: No EntitledOffering received from CAS"
+45,2017-08-14 01:17:33.439 PDT,"ERROR 2017-08-14 01:17:33,439 [[commerce-order-2.2.5].jettyConnector.receiver.2699] Error :: After calling CAS Order Response Payload ::: :<?xml version=""1.0"" encoding=""UTF-8"" standalone=""yes""?><Errors xmlns=""http://schema.intuit.com/platform/common/error/v2""><error><code>ORDR-201530</code><type>CLIENT</type><message>Payment Auth service failed due to invalid Payment Information.</message><detail>Payment Auth service failed due to invalid Payment Information.</detail></error></Errors>"
+46,2017-08-14 01:16:17.251 PDT,"ERROR 2017-08-14 01:16:17,251 [[commerce-order-2.2.5].jettyConnector.receiver.2698] Error :: After calling CAS Order Response Payload ::: :<?xml version=""1.0"" encoding=""UTF-8"" standalone=""yes""?><Errors xmlns=""http://schema.intuit.com/platform/common/error/v2""><error><code>ORDR-201530</code><type>CLIENT</type><message>Payment Auth service failed due to invalid Payment Information.</message><detail>Payment Auth service failed due to invalid Payment Information.</detail></error></Errors>"
+47,2017-08-14 01:16:17.122 PDT,"ERROR 2017-08-14 01:16:17,122 [[commerce-entitlement-2.1.0].ConnectorWithoutMuleSession.receiver.5321] After calling CAS Get EntitledOfferings Response Payload :: Errors: <?xml version=""1.0"" encoding=""UTF-8"" standalone=""yes""?><Errors xmlns=""http://schema.intuit.com/platform/common/error/v2""><error><code>ENT-202106</code><type>CLIENT</type><message>CustomerAccountNumber provided is Invalid</message><detail>CustomerAccountNumber provided is Invalid</detail><moreInfo>CustomerAccountNumber provided is Invalid</moreInfo></error></Errors>"
+48,2017-08-14 01:11:07.210 PDT,"ERROR 2017-08-14 01:11:07,210 [[commerce-order-2.2.5].jettyConnector.receiver.2697] Error :: After calling CAS Order Response Payload ::: :<?xml version=""1.0"" encoding=""UTF-8"" standalone=""yes""?><Errors xmlns=""http://schema.intuit.com/platform/common/error/v2""><error><code>ORDR-201520</code><type>SERVER</type><message>Payment Auth service call failed.</message></error></Errors>"
+49,2017-08-14 01:10:22.204 PDT,"ERROR 2017-08-14 01:10:22,204 [[commerce-order-2.2.5].jettyConnector.receiver.2706] Error :: After calling CAS Order Response Payload ::: :<?xml version=""1.0"" encoding=""UTF-8"" standalone=""yes""?><Errors xmlns=""http://schema.intuit.com/platform/common/error/v2""><error><code>ORDR-201520</code><type>SERVER</type><message>Payment Auth service call failed.</message></error></Errors>"
+50,2017-08-14 01:08:07.843 PDT,"ERROR 2017-08-14 01:08:07,843 [[commerce-order-2.2.5].jettyConnector.receiver.2717] Error :: After calling CAS Order Response Payload ::: :<?xml version=""1.0"" encoding=""UTF-8"" standalone=""yes""?><Errors xmlns=""http://schema.intuit.com/platform/common/error/v2""><error><code>ORDR-201550</code><type>CLIENT</type><message>Payment Auth service failed due to invalid AVS.</message><detail>Payment Auth service failed due to invalid AVS.</detail></error></Errors>"
+51,2017-08-14 01:08:03.956 PDT,"ERROR 2017-08-14 01:08:03,956 [[commerce-globalsalestax-2.0.8].connector.http.mule.default.receiver.2823] org.mule.exception.CatchMessagingExceptionStrategy: :
+********************************************************************************
+Message               : Wrapper (java.lang.RuntimeException). Message payload is of type: String
+Code                  : MULE_ERROR-29999
+--------------------------------------------------------------------------------
+Exception stack is:
+1. null (com.intuit.platform.common.mule.error.exceptions.ErrorCollectionException)
+  com.intuit.platform.services.commerce.schemavalidation.ExtendedSchemaValidationFilter:222 (null)
+2. Wrapper (java.lang.RuntimeException)
+  com.intuit.platform.services.commerce.schemavalidation.ExtendedSchemaValidationFilter:222 (null)
+3. Wrapper (java.lang.RuntimeException). Message payload is of type: String (org.mule.api.MessagingException)
+  org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor:32 (http://www.mulesoft.org/docs/site/current3/apidocs/org/mule/api/MessagingException.html)
+--------------------------------------------------------------------------------
+Root Exception stack trace:
+com.intuit.platform.common.mule.error.exceptions.ErrorCollectionException
+	at com.intuit.platform.services.commerce.schemavalidation.ExtendedSchemaValidationFilter.setMultipleErrorMessageContext(ExtendedSchemaValidationFilter.java:222)
+	at com.intuit.platform.services.commerce.schemavalidation.ExtendedSchemaValidationFilter.accept(ExtendedSchemaValidationFilter.java:158)
+	at org.mule.routing.MessageFilter.accept(MessageFilter.java:91)
+    + 3 more (set debug level logging or '-Dmule.verbose.exceptions=true' for everything)
+********************************************************************************"
+52,2017-08-14 01:08:03.953 PDT,"ERROR 2017-08-14 01:08:03,953 [[commerce-globalsalestax-2.0.8].connector.http.mule.default.receiver.2823] com.intuit.platform.services.commerce.schemavalidation.ExtendedSchemaValidationFilter: :<?xml version=""1.0"" encoding=""UTF-8""?><ns1:globalSalesTax xmlns:ns1=""http://schema.intuit.com/platform/globalsalestax/v1""><salesTaxHeader><documentId>IOPPaycycle_2763438</documentId><documentDateTime>2017-08-11T00:00:00.000-07:00</documentDateTime><customer><customerId schemeName="""">2763438</customerId><customerInfo><businessName>2763438</businessName></customerInfo><billingAddress><addressInfo><city>Rosemont</city><state>IL</state><postalCode>60018</postalCode><country>US</country></addressInfo><standardizeAddress>true</standardizeAddress><standardizedAddressInd>true</standardizedAddressInd></billingAddress></customer><salesContext><salesOrganization>IOPPaycycle</salesOrganization><bizProcessType>Invoice</bizProcessType><transactionDateTime>2017-08-11T00:00:00.000-07:00</transactionDateTime><salesParty><salesBusiness><name>IOPPaycycle</name><companyId>170</companyId></salesBusiness></salesParty><taxInfoSpec><JurisdictionLevelDetails>false</JurisdictionLevelDetails></taxInfoSpec></salesContext><salesQuote><totalTransaction currency=""USD"">0.00</totalTransaction><totalTax currency=""USD"">0.00</totalTax><totalFreight currency=""USD"">0.00</totalFreight><totalCredit currency=""USD"">0.00</totalCredit></salesQuote></salesTaxHeader><salesTaxLines><salesTaxLine><lineNumber>1</lineNumber><orderItem><itemId>IOPBillingSalesTax</itemId><itemAttributes><productClass>OSB</productClass></itemAttributes></orderItem><orderQuantity uom=""Each"">1</orderQuantity><unitPrice><amount currency=""USD"">0.00</amount><perQuantity uom=""Each"">1</perQuantity></unitPrice><lineTotal currency=""USD"">0.00</lineTotal><tax><extendedTaxAmount currency=""USD"">0.00</extendedTaxAmount><unitTaxAmount currency=""USD"">0.00</unitTaxAmount><taxRate>0.0</taxRate><taxType>SalesTax</taxType></tax></salesTaxLine></salesTaxLines></ns1:globalSalesTax>"
+53,2017-08-14 01:08:03.953 PDT,"ERROR 2017-08-14 01:08:03,953 [[commerce-globalsalestax-2.0.8].connector.http.mule.default.receiver.2823] com.intuit.platform.services.commerce.schemavalidation.ExtendedSchemaValidationFilter: :SchemaValidationFilter rejected a message because it apparently failed to validate against the schema with multiple errors: 1"
+54,2017-08-14 01:08:03.864 PDT,"ERROR 2017-08-14 01:08:03,864 [[commerce-globalsalestax-2.0.8].connector.http.mule.default.receiver.2813] org.mule.exception.CatchMessagingExceptionStrategy: :
+********************************************************************************
+Message               : Wrapper (java.lang.RuntimeException). Message payload is of type: String
+Code                  : MULE_ERROR-29999
+--------------------------------------------------------------------------------
+Exception stack is:
+1. null (com.intuit.platform.common.mule.error.exceptions.ErrorCollectionException)
+  com.intuit.platform.services.commerce.schemavalidation.ExtendedSchemaValidationFilter:222 (null)
+2. Wrapper (java.lang.RuntimeException)
+  com.intuit.platform.services.commerce.schemavalidation.ExtendedSchemaValidationFilter:222 (null)
+3. Wrapper (java.lang.RuntimeException). Message payload is of type: String (org.mule.api.MessagingException)
+  org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor:32 (http://www.mulesoft.org/docs/site/current3/apidocs/org/mule/api/MessagingException.html)
+--------------------------------------------------------------------------------
+Root Exception stack trace:
+com.intuit.platform.common.mule.error.exceptions.ErrorCollectionException
+	at com.intuit.platform.services.commerce.schemavalidation.ExtendedSchemaValidationFilter.setMultipleErrorMessageContext(ExtendedSchemaValidationFilter.java:222)
+	at com.intuit.platform.services.commerce.schemavalidation.ExtendedSchemaValidationFilter.accept(ExtendedSchemaValidationFilter.java:158)
+	at org.mule.routing.MessageFilter.accept(MessageFilter.java:91)
+    + 3 more (set debug level logging or '-Dmule.verbose.exceptions=true' for everything)
+********************************************************************************"
+55,2017-08-14 01:08:03.859 PDT,"ERROR 2017-08-14 01:08:03,859 [[commerce-globalsalestax-2.0.8].connector.http.mule.default.receiver.2813] com.intuit.platform.services.commerce.schemavalidation.ExtendedSchemaValidationFilter: :<?xml version=""1.0"" encoding=""UTF-8""?><ns1:globalSalesTax xmlns:ns1=""http://schema.intuit.com/platform/globalsalestax/v1""><salesTaxHeader><documentId>IOPPaycycle_2763438</documentId><documentDateTime>2017-08-11T00:00:00.000-07:00</documentDateTime><customer><customerId schemeName="""">2763438</customerId><customerInfo><businessName>2763438</businessName></customerInfo><billingAddress><addressInfo><city>Rosemont</city><state>IL</state><postalCode>60018</postalCode><country>US</country></addressInfo><standardizeAddress>true</standardizeAddress><standardizedAddressInd>true</standardizedAddressInd></billingAddress></customer><salesContext><salesOrganization>IOPPaycycle</salesOrganization><bizProcessType>Invoice</bizProcessType><transactionDateTime>2017-08-11T00:00:00.000-07:00</transactionDateTime><salesParty><salesBusiness><name>IOPPaycycle</name><companyId>170</companyId></salesBusiness></salesParty><taxInfoSpec><JurisdictionLevelDetails>false</JurisdictionLevelDetails></taxInfoSpec></salesContext><salesQuote><totalTransaction currency=""USD"">93.00</totalTransaction><totalTax currency=""USD"">0.00</totalTax><totalFreight currency=""USD"">0.00</totalFreight><totalCredit currency=""USD"">0.00</totalCredit></salesQuote></salesTaxHeader><salesTaxLines><salesTaxLine><lineNumber>1</lineNumber><orderItem><itemId>IOPBillingSalesTax</itemId><itemAttributes><productClass>OSB</productClass></itemAttributes></orderItem><orderQuantity uom=""Each"">1</orderQuantity><unitPrice><amount currency=""USD"">93.00</amount><perQuantity uom=""Each"">1</perQuantity></unitPrice><lineTotal currency=""USD"">93.00</lineTotal><tax><extendedTaxAmount currency=""USD"">0.00</extendedTaxAmount><unitTaxAmount currency=""USD"">0.00</unitTaxAmount><taxRate>0.0</taxRate><taxType>SalesTax</taxType></tax></salesTaxLine></salesTaxLines></ns1:globalSalesTax>"
+56,2017-08-14 01:08:03.859 PDT,"ERROR 2017-08-14 01:08:03,859 [[commerce-globalsalestax-2.0.8].connector.http.mule.default.receiver.2813] com.intuit.platform.services.commerce.schemavalidation.ExtendedSchemaValidationFilter: :SchemaValidationFilter rejected a message because it apparently failed to validate against the schema with multiple errors: 1"
+57,2017-08-14 01:06:36.400 PDT,"ERROR 2017-08-14 01:06:36,400 [[commerce-order-2.2.5].jettyConnector.receiver.2700] logger77-64-43: :ERROR After CAS call : Create Account : Response Payload : <?xml version=""1.0"" encoding=""UTF-8"" standalone=""yes""?><Errors xmlns=""http://schema.intuit.com/platform/common/error/v2""><error><code>ACCT-203160</code><type>CLIENT</type><message>Invalid postal code</message><detail>Invalid US postal code</detail></error></Errors>"
+58,2017-08-14 01:03:34.339 PDT,"ERROR 2017-08-14 01:03:34,339 [[commerce-entitlement-2.1.0].ConnectorWithoutMuleSession.receiver.5285] After calling CAS Get EntitledOfferings Response Payload :: Errors: <?xml version=""1.0"" encoding=""UTF-8"" standalone=""yes""?><Errors xmlns=""http://schema.intuit.com/platform/common/error/v2""><error><code>ENT-202103</code><type>CLIENT</type><message>Required Parameter LicenseNumber is Missing</message><detail>Required Parameter LicenseNumber is Missing</detail></error></Errors>"
+59,2017-08-14 01:02:44.575 PDT,"ERROR 2017-08-14 01:02:44,575 [[commerce-entitlement-2.1.0].ConnectorWithoutMuleSession.receiver.5244] com.intuit.platform.services.commerce.entitlement.transformer.EntitlementOfferingResTransformer: No EntitledOffering received from CAS"
+60,2017-08-14 00:59:45.921 PDT,"ERROR 2017-08-14 00:59:45,921 [[commerce-globalsalestax-2.0.8].connector.http.mule.default.receiver.2823] org.mule.exception.CatchMessagingExceptionStrategy: :
+********************************************************************************
+Message               : Wrapper (java.lang.RuntimeException). Message payload is of type: String
+Code                  : MULE_ERROR-29999
+--------------------------------------------------------------------------------
+Exception stack is:
+1. null (com.intuit.platform.common.mule.error.exceptions.ErrorCollectionException)
+  com.intuit.platform.services.commerce.schemavalidation.ExtendedSchemaValidationFilter:222 (null)
+2. Wrapper (java.lang.RuntimeException)
+  com.intuit.platform.services.commerce.schemavalidation.ExtendedSchemaValidationFilter:222 (null)
+3. Wrapper (java.lang.RuntimeException). Message payload is of type: String (org.mule.api.MessagingException)
+  org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor:32 (http://www.mulesoft.org/docs/site/current3/apidocs/org/mule/api/MessagingException.html)
+--------------------------------------------------------------------------------
+Root Exception stack trace:
+com.intuit.platform.common.mule.error.exceptions.ErrorCollectionException
+	at com.intuit.platform.services.commerce.schemavalidation.ExtendedSchemaValidationFilter.setMultipleErrorMessageContext(ExtendedSchemaValidationFilter.java:222)
+	at com.intuit.platform.services.commerce.schemavalidation.ExtendedSchemaValidationFilter.accept(ExtendedSchemaValidationFilter.java:158)
+	at org.mule.routing.MessageFilter.accept(MessageFilter.java:91)
+    + 3 more (set debug level logging or '-Dmule.verbose.exceptions=true' for everything)
+********************************************************************************"
+61,2017-08-14 00:59:45.917 PDT,"ERROR 2017-08-14 00:59:45,917 [[commerce-globalsalestax-2.0.8].connector.http.mule.default.receiver.2823] com.intuit.platform.services.commerce.schemavalidation.ExtendedSchemaValidationFilter: :<?xml version=""1.0"" encoding=""UTF-8""?><ns1:globalSalesTax xmlns:ns1=""http://schema.intuit.com/platform/globalsalestax/v1""><salesTaxHeader><documentId>IOPPaycycle_1633927</documentId><documentDateTime>2017-08-13T00:00:00.000-07:00</documentDateTime><customer><customerId schemeName="""">1633927</customerId><customerInfo><businessName>1633927</businessName></customerInfo><billingAddress><addressInfo><city>O’Fallon</city><state>IL</state><postalCode>62269</postalCode><country>US</country></addressInfo><standardizeAddress>true</standardizeAddress><standardizedAddressInd>true</standardizedAddressInd></billingAddress></customer><salesContext><salesOrganization>IOPPaycycle</salesOrganization><bizProcessType>Invoice</bizProcessType><transactionDateTime>2017-08-13T00:00:00.000-07:00</transactionDateTime><salesParty><salesBusiness><name>IOPPaycycle</name><companyId>170</companyId></salesBusiness></salesParty><taxInfoSpec><JurisdictionLevelDetails>false</JurisdictionLevelDetails></taxInfoSpec></salesContext><salesQuote><totalTransaction currency=""USD"">0.00</totalTransaction><totalTax currency=""USD"">0.00</totalTax><totalFreight currency=""USD"">0.00</totalFreight><totalCredit currency=""USD"">0.00</totalCredit></salesQuote></salesTaxHeader><salesTaxLines><salesTaxLine><lineNumber>1</lineNumber><orderItem><itemId>IOPBillingSalesTax</itemId><itemAttributes><productClass>OSB</productClass></itemAttributes></orderItem><orderQuantity uom=""Each"">1</orderQuantity><unitPrice><amount currency=""USD"">0.00</amount><perQuantity uom=""Each"">1</perQuantity></unitPrice><lineTotal currency=""USD"">0.00</lineTotal><tax><extendedTaxAmount currency=""USD"">0.00</extendedTaxAmount><unitTaxAmount currency=""USD"">0.00</unitTaxAmount><taxRate>0.0</taxRate><taxType>SalesTax</taxType></tax></salesTaxLine></salesTaxLines></ns1:globalSalesTax>"
+62,2017-08-14 00:59:45.917 PDT,"ERROR 2017-08-14 00:59:45,917 [[commerce-globalsalestax-2.0.8].connector.http.mule.default.receiver.2823] com.intuit.platform.services.commerce.schemavalidation.ExtendedSchemaValidationFilter: :SchemaValidationFilter rejected a message because it apparently failed to validate against the schema with multiple errors: 1"
+63,2017-08-14 00:59:45.741 PDT,"ERROR 2017-08-14 00:59:45,741 [[commerce-globalsalestax-2.0.8].connector.http.mule.default.receiver.2823] org.mule.exception.CatchMessagingExceptionStrategy: :
+********************************************************************************
+Message               : Wrapper (java.lang.RuntimeException). Message payload is of type: String
+Code                  : MULE_ERROR-29999
+--------------------------------------------------------------------------------
+Exception stack is:
+1. null (com.intuit.platform.common.mule.error.exceptions.ErrorCollectionException)
+  com.intuit.platform.services.commerce.schemavalidation.ExtendedSchemaValidationFilter:222 (null)
+2. Wrapper (java.lang.RuntimeException)
+  com.intuit.platform.services.commerce.schemavalidation.ExtendedSchemaValidationFilter:222 (null)
+3. Wrapper (java.lang.RuntimeException). Message payload is of type: String (org.mule.api.MessagingException)
+  org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor:32 (http://www.mulesoft.org/docs/site/current3/apidocs/org/mule/api/MessagingException.html)
+--------------------------------------------------------------------------------
+Root Exception stack trace:
+com.intuit.platform.common.mule.error.exceptions.ErrorCollectionException
+	at com.intuit.platform.services.commerce.schemavalidation.ExtendedSchemaValidationFilter.setMultipleErrorMessageContext(ExtendedSchemaValidationFilter.java:222)
+	at com.intuit.platform.services.commerce.schemavalidation.ExtendedSchemaValidationFilter.accept(ExtendedSchemaValidationFilter.java:158)
+	at org.mule.routing.MessageFilter.accept(MessageFilter.java:91)
+    + 3 more (set debug level logging or '-Dmule.verbose.exceptions=true' for everything)
+********************************************************************************"
+64,2017-08-14 00:59:45.736 PDT,"ERROR 2017-08-14 00:59:45,736 [[commerce-globalsalestax-2.0.8].connector.http.mule.default.receiver.2823] com.intuit.platform.services.commerce.schemavalidation.ExtendedSchemaValidationFilter: :<?xml version=""1.0"" encoding=""UTF-8""?><ns1:globalSalesTax xmlns:ns1=""http://schema.intuit.com/platform/globalsalestax/v1""><salesTaxHeader><documentId>IOPPaycycle_1633927</documentId><documentDateTime>2017-08-13T00:00:00.000-07:00</documentDateTime><customer><customerId schemeName="""">1633927</customerId><customerInfo><businessName>1633927</businessName></customerInfo><billingAddress><addressInfo><city>O’Fallon</city><state>IL</state><postalCode>62269</postalCode><country>US</country></addressInfo><standardizeAddress>true</standardizeAddress><standardizedAddressInd>true</standardizedAddressInd></billingAddress></customer><salesContext><salesOrganization>IOPPaycycle</salesOrganization><bizProcessType>Invoice</bizProcessType><transactionDateTime>2017-08-13T00:00:00.000-07:00</transactionDateTime><salesParty><salesBusiness><name>IOPPaycycle</name><companyId>170</companyId></salesBusiness></salesParty><taxInfoSpec><JurisdictionLevelDetails>false</JurisdictionLevelDetails></taxInfoSpec></salesContext><salesQuote><totalTransaction currency=""USD"">77.00</totalTransaction><totalTax currency=""USD"">0.00</totalTax><totalFreight currency=""USD"">0.00</totalFreight><totalCredit currency=""USD"">0.00</totalCredit></salesQuote></salesTaxHeader><salesTaxLines><salesTaxLine><lineNumber>1</lineNumber><orderItem><itemId>IOPBillingSalesTax</itemId><itemAttributes><productClass>OSB</productClass></itemAttributes></orderItem><orderQuantity uom=""Each"">1</orderQuantity><unitPrice><amount currency=""USD"">77.00</amount><perQuantity uom=""Each"">1</perQuantity></unitPrice><lineTotal currency=""USD"">77.00</lineTotal><tax><extendedTaxAmount currency=""USD"">0.00</extendedTaxAmount><unitTaxAmount currency=""USD"">0.00</unitTaxAmount><taxRate>0.0</taxRate><taxType>SalesTax</taxType></tax></salesTaxLine></salesTaxLines></ns1:globalSalesTax>"
+65,2017-08-14 00:59:45.736 PDT,"ERROR 2017-08-14 00:59:45,736 [[commerce-globalsalestax-2.0.8].connector.http.mule.default.receiver.2823] com.intuit.platform.services.commerce.schemavalidation.ExtendedSchemaValidationFilter: :SchemaValidationFilter rejected a message because it apparently failed to validate against the schema with multiple errors: 1"
+66,2017-08-14 00:52:11.190 PDT,"ERROR 2017-08-14 00:52:11,190 [[commerce-entitlement-2.1.0].ConnectorWithoutMuleSession.receiver.5311] After calling CAS Get EntitledOfferings Response Payload :: Errors: <?xml version=""1.0"" encoding=""UTF-8"" standalone=""yes""?><Errors xmlns=""http://schema.intuit.com/platform/common/error/v2""><error><code>ENT-202106</code><type>CLIENT</type><message>CustomerAccountNumber provided is Invalid</message><detail>CustomerAccountNumber provided is Invalid</detail><moreInfo>CustomerAccountNumber provided is Invalid</moreInfo></error></Errors>"
+67,2017-08-14 00:24:39.885 PDT,"ERROR 2017-08-14 00:24:39,885 [[commerce-entitlement-2.1.0].ConnectorWithoutMuleSession.receiver.5232] After calling CAS Get EntitledOfferings Response Payload :: Errors: <?xml version=""1.0"" encoding=""UTF-8"" standalone=""yes""?><Errors xmlns=""http://schema.intuit.com/platform/common/error/v2""><error><code>ENT-202106</code><type>CLIENT</type><message>CustomerAccountNumber provided is Invalid</message><detail>CustomerAccountNumber provided is Invalid</detail><moreInfo>CustomerAccountNumber provided is Invalid</moreInfo></error></Errors>"
+68,2017-08-14 00:23:30.869 PDT,"ERROR 2017-08-14 00:23:30,869 [[commerce-entitlement-2.1.0].ConnectorWithoutMuleSession.receiver.5267] org.mule.exception.CatchMessagingExceptionStrategy: 
+********************************************************************************
+Message               : Failed to route event via endpoint: DefaultOutboundEndpoint{endpointUri=http://otb.bos.intuit.net:80/orabpel/default/CancelInstalledProductIntuitReqABCSImpl, connector=HttpConnector
+{
+  name=ConnectorWithoutMuleSession
+  lifecycle=start
+  this=2dad6e55
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[http]
+  serviceOverrides=
+    session.handler=org.mule.session.NullSessionHandler
+    message.factory=com.intuit.platform.services.commerce.entitlement.util.CustomHttpMuleMessageFactory
+}
+,  name='endpoint.http.otb.bos.intuit.net.80.orabpel.default.CancelInstalledProductIntuitReqABCSImpl', mep=REQUEST_RESPONSE, properties={exceptionOnMessageError=true}, transactionConfig=Transaction{factory=null, action=INDIFFERENT, timeout=0}, deleteUnacceptedMessages=false, initialState=started, responseTimeout=5000, endpointEncoding=UTF-8, disableTransportTransformer=false}. Message payload is of type: PostMethod
+Code                  : MULE_ERROR-42999
+--------------------------------------------------------------------------------
+Exception stack is:
+1. Read timed out (java.net.SocketTimeoutException)
+  java.net.SocketInputStream:-2 (null)
+2. Failed to route event via endpoint: DefaultOutboundEndpoint{endpointUri=http://otb.bos.intuit.net:80/orabpel/default/CancelInstalledProductIntuitReqABCSImpl, connector=HttpConnector
+{
+  name=ConnectorWithoutMuleSession
+  lifecycle=start
+  this=2dad6e55
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[http]
+  serviceOverrides=
+    session.handler=org.mule.session.NullSessionHandler
+    message.factory=com.intuit.platform.services.commerce.entitlement.util.CustomHttpMuleMessageFactory
+}
+,  name='endpoint.http.otb.bos.intuit.net.80.orabpel.default.CancelInstalledProductIntuitReqABCSImpl', mep=REQUEST_RESPONSE, properties={exceptionOnMessageError=true}, transactionConfig=Transaction{factory=null, action=INDIFFERENT, timeout=0}, deleteUnacceptedMessages=false, initialState=started, responseTimeout=5000, endpointEncoding=UTF-8, disableTransportTransformer=false}. Message payload is of type: PostMethod (org.mule.api.transport.DispatchException)
+  org.mule.transport.http.HttpClientMessageDispatcher:151 (http://www.mulesoft.org/docs/site/current3/apidocs/org/mule/api/transport/DispatchException.html)
+--------------------------------------------------------------------------------
+Root Exception stack trace:
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+    + 3 more (set debug level logging or '-Dmule.verbose.exceptions=true' for everything)
+********************************************************************************"
+69,2017-08-14 00:09:48.489 PDT,"ERROR 2017-08-14 00:09:48,489 [[commerce-entitlement-2.1.0].ConnectorWithoutMuleSession.receiver.5262] com.intuit.platform.services.commerce.entitlement.transformer.EntitlementOfferingResTransformer: No EntitledOffering received from CAS"
+70,2017-08-14 00:09:25.039 PDT,"ERROR 2017-08-14 00:09:25,039 [[ebcs-restrictions-rps-2.0.1].httpNoSessionConnector.receiver.4628] **** restrictions-rps :: restrictionsRpsMainOrchestrationFlow: :193514553233539:null:restrictionsRpsMainOrchestrationFlow: Restrictions-RPS Exception: ebcs.restrictions.rps.inputschema.check  null"
+71,2017-08-14 00:09:25.039 PDT,"ERROR 2017-08-14 00:09:25,039 [[ebcs-restrictions-rps-2.0.1].httpNoSessionConnector.receiver.4628] org.mule.exception.CatchMessagingExceptionStrategy: :
+********************************************************************************
+Message               : Wrapper (java.lang.RuntimeException). Message payload is of type: String
+Code                  : MULE_ERROR-29999
+--------------------------------------------------------------------------------
+Exception stack is:
+1. null (com.intuit.platform.common.mule.error.exceptions.ErrorCollectionException)
+  com.intuit.platform.services.commerce.schemavalidation.ExtendedSchemaValidationFilter:222 (null)
+2. Wrapper (java.lang.RuntimeException)
+  com.intuit.platform.services.commerce.schemavalidation.ExtendedSchemaValidationFilter:222 (null)
+3. Wrapper (java.lang.RuntimeException). Message payload is of type: String (org.mule.api.MessagingException)
+  org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor:32 (http://www.mulesoft.org/docs/site/current3/apidocs/org/mule/api/MessagingException.html)
+--------------------------------------------------------------------------------
+Root Exception stack trace:
+com.intuit.platform.common.mule.error.exceptions.ErrorCollectionException
+	at com.intuit.platform.services.commerce.schemavalidation.ExtendedSchemaValidationFilter.setMultipleErrorMessageContext(ExtendedSchemaValidationFilter.java:222)
+	at com.intuit.platform.services.commerce.schemavalidation.ExtendedSchemaValidationFilter.accept(ExtendedSchemaValidationFilter.java:158)
+	at org.mule.routing.MessageFilter.accept(MessageFilter.java:91)
+    + 3 more (set debug level logging or '-Dmule.verbose.exceptions=true' for everything)
+********************************************************************************"
+72,2017-08-14 00:09:25.031 PDT,"ERROR 2017-08-14 00:09:25,031 [[ebcs-restrictions-rps-2.0.1].httpNoSessionConnector.receiver.4628] com.intuit.platform.services.commerce.schemavalidation.ExtendedSchemaValidationFilter: :<?xml version=""1.0"" encoding=""UTF-8"" standalone=""yes""?><ns3:screenPartyRequest xmlns:ns2=""http://schema.intuit.com/platform/common/error/v2"" xmlns:ns3=""http://schema.intuit.com/platform/ebcs/restrictions/rps/v1"" xmlns:ns4=""http://schema.intuit.com/rpsengine/xmlintegration/request"" xmlns:ns5=""http://schema.intuit.com/rpsengine/xmlintegration/response""><organizationCode>INTU_QBOUS</organizationCode><sourcePlatform>QBO US</sourcePlatform><isSubscription>true</isSubscription><customers><customer><customerId>193514560212134</customerId><contactName>Daniel Halim</contactName><address type=""BI""><addressLine1>Setra ria 6A</addressLine1><addressLine2></addressLine2><city>Bandung</city><stateOrProvince>ID</stateOrProvince><stateCode>ID</stateCode><postalCode>40112</postalCode><country>US</country><countryCode>US</countryCode></address></customer><customer><customerId>193514560212134</customerId><contactName>Paulus Halim</contactName><companyName>PT. Laju Samudra Perkasa</companyName><address type=""AC""><addressLine1>Jl. Raya Tanjung Sari Sumedang KM.24</addressLine1><stateOrProvince>AK</stateOrProvince><postalCode>7</postalCode><country>US</country><countryCode>US</countryCode></address></customer></customers></ns3:screenPartyRequest>"
+73,2017-08-14 00:09:25.031 PDT,"ERROR 2017-08-14 00:09:25,031 [[ebcs-restrictions-rps-2.0.1].httpNoSessionConnector.receiver.4628] com.intuit.platform.services.commerce.schemavalidation.ExtendedSchemaValidationFilter: :SchemaValidationFilter rejected a message because it apparently failed to validate against the schema with multiple errors: 2"

@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.6.min.css" type="text/css" />
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-widgets-0.12.6.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.6.min.js"></script>
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-widgets-0.12.6.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="2323a83a-64de-43e1-abc4-132841367be3"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              var docs_json = {"8bb5fae0-6f1b-44ed-8fd5-c067b6e7ef6a":{"roots":{"references":[{"attributes":{"editor":{"id":"668244a8-fc72-421d-980f-02acb403cf1a","type":"StringEditor"},"field":"dates","formatter":{"id":"49b69d05-8b39-49be-9498-59071683088c","type":"DateFormatter"},"title":"Date"},"id":"95b5088f-f795-4077-acbd-b917eafa0314","type":"TableColumn"},{"attributes":{},"id":"ddba71ce-d34e-43f4-9a0d-76cdf99cf6f4","type":"StringEditor"},{"attributes":{"columns":[{"id":"95b5088f-f795-4077-acbd-b917eafa0314","type":"TableColumn"},{"id":"98ccef28-d1b4-46e1-8668-947f9236b34c","type":"TableColumn"}],"height":280,"source":{"id":"e81de0a4-5770-4d9b-9969-ef72b21a25b6","type":"ColumnDataSource"},"width":400},"id":"226df721-56cf-4f92-9ce6-d4ed02135968","type":"DataTable"},{"attributes":{},"id":"7ab83036-9066-4b0f-8faf-930653ae5e8b","type":"StringFormatter"},{"attributes":{"editor":{"id":"064407e2-0608-4eeb-bf9b-27113e3031da","type":"StringEditor"},"field":"logs","formatter":{"id":"7ab83036-9066-4b0f-8faf-930653ae5e8b","type":"StringFormatter"},"title":"logs"},"id":"9c6c193b-6bb2-47a2-af2b-ea6f9a84575c","type":"TableColumn"},{"attributes":{"callback":null,"column_names":["labels","logs"],"data":{"labels":[5,5,5,5,5],"logs":["ERROR 2017-08-19 14:17:45,913 [[webs-tbt-brm-router-service-internal-1.2.1.0].http.request.dispatch.9453.11] org.mule.exception.DefaultSystemExceptionStrategy: Caught exception in Exception Strategy: Remote host closed connection during handshake\njavax.net.ssl.SSLHandshakeException: Remote host closed connection during handshake\n\tat sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:992) ~[?:1.8.0_112]\n\tat sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1375) ~[?:1.8.0_112]\n\tat sun.security.ssl.SSLSocketImpl.readDataRecord(SSLSocketImpl.java:928) ~[?:1.8.0_112]\n\tat sun.security.ssl.AppInputStream.read(AppInputStream.java:105) ~[?:1.8.0_112]\n\tat java.io.BufferedInputStream.fill(BufferedInputStream.java:246) ~[?:1.8.0_112]\n\tat java.io.BufferedInputStream.read(BufferedInputStream.java:265) ~[?:1.8.0_112]\n\tat org.apache.commons.httpclient.HttpParser.readRawLine(HttpParser.java:78) ~[commons-httpclient-3.1.jar:?]\n\tat org.apache.commons.httpclient.HttpParser.readLine(HttpParser.java:106) ~[commons-httpclient-3.1.jar:?]\n\tat org.mule.transport.http.HttpServerConnection.readLine(HttpServerConnection.java:245) ~[mule-transport-http-3.8.3.jar:3.8.3]\n\tat org.mule.transport.http.HttpServerConnection.getRequestLine(HttpServerConnection.java:557) ~[mule-transport-http-3.8.3.jar:3.8.3]\n\tat org.mule.transport.http.HttpRequestDispatcherWork.run(HttpRequestDispatcherWork.java:67) [mule-transport-http-3.8.3.jar:3.8.3]\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_112]\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_112]\n\tat java.lang.Thread.run(Thread.java:745) [?:1.8.0_112]\nCaused by: java.io.EOFException: SSL peer shut down incorrectly\n\tat sun.security.ssl.InputRecord.read(InputRecord.java:505) ~[?:1.8.0_112]\n\tat sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:973) ~[?:1.8.0_112]\n\t... 13 more","ERROR 2017-08-19 14:17:45,913 [[webs-tbt-brm-router-service-internal-1.2.1.0].http.request.dispatch.9453.11] org.mule.exception.DefaultSystemExceptionStrategy: Caught exception in Exception Strategy: Remote host closed connection during handshake\njavax.net.ssl.SSLHandshakeException: Remote host closed connection during handshake\n\tat sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:992) ~[?:1.8.0_112]\n\tat sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1375) ~[?:1.8.0_112]\n\tat sun.security.ssl.SSLSocketImpl.readDataRecord(SSLSocketImpl.java:928) ~[?:1.8.0_112]\n\tat sun.security.ssl.AppInputStream.read(AppInputStream.java:105) ~[?:1.8.0_112]\n\tat java.io.BufferedInputStream.fill(BufferedInputStream.java:246) ~[?:1.8.0_112]\n\tat java.io.BufferedInputStream.read(BufferedInputStream.java:265) ~[?:1.8.0_112]\n\tat org.apache.commons.httpclient.HttpParser.readRawLine(HttpParser.java:78) ~[commons-httpclient-3.1.jar:?]\n\tat org.apache.commons.httpclient.HttpParser.readLine(HttpParser.java:106) ~[commons-httpclient-3.1.jar:?]\n\tat org.mule.transport.http.HttpServerConnection.readLine(HttpServerConnection.java:245) ~[mule-transport-http-3.8.3.jar:3.8.3]\n\tat org.mule.transport.http.HttpServerConnection.getRequestLine(HttpServerConnection.java:557) ~[mule-transport-http-3.8.3.jar:3.8.3]\n\tat org.mule.transport.http.HttpRequestDispatcherWork.run(HttpRequestDispatcherWork.java:67) [mule-transport-http-3.8.3.jar:3.8.3]\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_112]\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_112]\n\tat java.lang.Thread.run(Thread.java:745) [?:1.8.0_112]\nCaused by: java.io.EOFException: SSL peer shut down incorrectly\n\tat sun.security.ssl.InputRecord.read(InputRecord.java:505) ~[?:1.8.0_112]\n\tat sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:973) ~[?:1.8.0_112]\n\t... 13 more","INFO  2017-08-19 14:17:20,045 [[webs-tbt-brm-router-service-internal-1.2.1.0].httpsConnector.receiver.4628] org.mule.transport.http.HttpClientMessageDispatcher: Received a redirect, but followRedirects=false. Response code: 500 Internal Server Error","INFO  2017-08-19 14:17:20,045 [[webs-tbt-brm-router-service-internal-1.2.1.0].httpsConnector.receiver.4628] org.mule.transport.http.HttpClientMessageDispatcher: Received a redirect, but followRedirects=false. Response code: 500 Internal Server Error","INFO  2017-08-19 14:17:19,685 [[webs-tbt-brm-router-service-internal-1.2.1.0].httpsConnector.receiver.4628] org.mule.transport.http.HttpClientMessageDispatcher: Received a redirect, but followRedirects=false. Response code: 500 Internal Server Error"]}},"id":"d6a2ea9a-df8d-42bb-b9ae-bfb046d2aea9","type":"ColumnDataSource"},{"attributes":{},"id":"1045f16b-db2e-4177-a341-a9b83027f410","type":"StringFormatter"},{"attributes":{"editor":{"id":"e69400fe-18e1-4e53-ac00-0efad1dba4a6","type":"StringEditor"},"field":"downloads","formatter":{"id":"e9ac0b53-a022-4774-92ff-b173bd56937f","type":"StringFormatter"},"title":"Downloads"},"id":"98ccef28-d1b4-46e1-8668-947f9236b34c","type":"TableColumn"},{"attributes":{},"id":"e69400fe-18e1-4e53-ac00-0efad1dba4a6","type":"StringEditor"},{"attributes":{"editor":{"id":"ddba71ce-d34e-43f4-9a0d-76cdf99cf6f4","type":"StringEditor"},"field":"labels","formatter":{"id":"1045f16b-db2e-4177-a341-a9b83027f410","type":"StringFormatter"},"title":"labels"},"id":"9411fb0f-5edb-4d3f-9bb2-df2280eb002f","type":"TableColumn"},{"attributes":{},"id":"e9ac0b53-a022-4774-92ff-b173bd56937f","type":"StringFormatter"},{"attributes":{},"id":"668244a8-fc72-421d-980f-02acb403cf1a","type":"StringEditor"},{"attributes":{},"id":"064407e2-0608-4eeb-bf9b-27113e3031da","type":"StringEditor"},{"attributes":{},"id":"49b69d05-8b39-49be-9498-59071683088c","type":"DateFormatter"},{"attributes":{"callback":null,"column_names":["downloads","dates"],"data":{"dates":[1393632000000.0,1393718400000.0,1393804800000.0,1393891200000.0,1393977600000.0,1394064000000.0,1394150400000.0,1394236800000.0,1394323200000.0,1394409600000.0],"downloads":[13,91,85,68,95,100,80,84,50,70]}},"id":"e81de0a4-5770-4d9b-9969-ef72b21a25b6","type":"ColumnDataSource"},{"attributes":{"columns":[{"id":"9c6c193b-6bb2-47a2-af2b-ea6f9a84575c","type":"TableColumn"},{"id":"9411fb0f-5edb-4d3f-9bb2-df2280eb002f","type":"TableColumn"}],"height":280,"source":{"id":"d6a2ea9a-df8d-42bb-b9ae-bfb046d2aea9","type":"ColumnDataSource"},"width":400},"id":"0c53045a-299c-439c-8e65-4e948fadafac","type":"DataTable"}],"root_ids":["0c53045a-299c-439c-8e65-4e948fadafac","226df721-56cf-4f92-9ce6-d4ed02135968"]},"title":"Bokeh Application","version":"0.12.6"}};
+              var render_items = [{"docid":"8bb5fae0-6f1b-44ed-8fd5-c067b6e7ef6a","elementid":"2323a83a-64de-43e1-abc4-132841367be3","modelid":"226df721-56cf-4f92-9ce6-d4ed02135968"}];
+              
+              Bokeh.embed.embed_items(docs_json, render_items);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>
