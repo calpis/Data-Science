@@ -1,4 +1,4 @@
-## Springboard Capstone Project One Proposal – Amazon Fine Food Review Predictions
+## Capstone Project One Proposal – Amazon Fine Food Review Predictions
 
 Introduction
 ======
