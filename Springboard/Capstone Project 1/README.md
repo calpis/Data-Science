@@ -6,7 +6,7 @@ There are a number of difficulties when predictive models are applied to human l
 
 Approach
 ======
-After obtaining the Amazon Fine Food Review data, it will be cleaned after some exploratory analysis is done.  There can be some missing data or long reviews which users typed in accidentally.  These anomalies will be studied through visualizations and deleted from the main dataset as needed.  Other features may be engineered during this process if the possibility of enhancements seems feasible.  Once the data is cleaned and explored, a convolutional neural network (CNN) is fitted on the data and performance is measured.  
+After obtaining the Amazon Fine Food Review data, it will be cleaned after some exploratory analysis is done.  There can be some missing data or long reviews which users typed in accidentally, which may create bias in the predictive models.  These anomalies will be studied through visualizations and deleted from the main dataset as needed.  Other features may be engineered during this process if the possibility of enhancements seems feasible.  Once the data is cleaned and explored,  some baseline models will be created. Then a convolutional neural network (CNN) is fitted on the data and performance will be compared against the baseline models. 
 
 Data
 =====
