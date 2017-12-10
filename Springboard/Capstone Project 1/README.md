@@ -19,3 +19,12 @@ A potential audience for this project is companies who utilizes ratings by users
 Deliverables
 ======
 The trained CNN will be a major part of the project, as well as the codebase, paper, and slidedeck. 
+
+Notebook Descriptions
+======
+*data_preparation.ipynb*: Initial data importing and analysis is done here. There are visualizations to detect/delete anomalies, feature engineering, and saves the resulting dataframe for the modeling notebooks to use.
+
+*Baseline_model.ipynb*: Creates a logistic regression and SVM models to create baseline accuracies to compare performance of a neural network.  Basic hyperparameter tuning is done to optimize the result obtained from these standard machine learning models.
+
+*NeuralNets_aws.ipynb*: Creates a convolutional neural network (CNN) and tunes multiple hyperparameters to optimize the performance accuracy.  The outputs of the notebook was executed on an AWS p2.xlarge machine.
+
