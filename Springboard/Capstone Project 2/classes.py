@@ -8,12 +8,12 @@ from skimage.color import rgb2gray, rgb2grey
 #image editing
 from skimage import feature, filters
 #from skimage import *
-import cPickle as pickle
+import pickle
 
 import matplotlib.pyplot as plt
 
 
-class ImageProcessor():
+class ImageProcessor(object):
     '''Class used to stack and convert images into grayscale
     args: 
         image: ndarray image of the flappybird state representation
@@ -51,8 +51,8 @@ class ImageProcessor():
         plt.show()
         
     def shape(self):
-        print('original image shape:', self._orig_image.shape)
-        print('gray image eshape:', self._gray_image.shape)
+        #print('original image shape:', self._orig_image.shape)
+        #print('gray image eshape:', self._gray_image.shape)
         return self._gray_image.shape
         
     def matrix(self, gray=True):
@@ -63,7 +63,7 @@ class ImageProcessor():
         if the state value is all 0 or not'''
         return np.max(self._gray_image) == 0
 
-class StackedImages():
+class StackedImages(object):
     '''object to keep the stacked frames together for organization.
     organized as a list of stacked ndarrays'''
     def __init__(self, image_processors = None, num_per_stack = None):
@@ -76,7 +76,9 @@ class StackedImages():
             for i in range(0, len(image_processors), num_per_stack):
                 list_images = [image_processors[i].gray_image for i in 
                               range(i, i+num_per_stack)]
-                stacked = np.stack(list_images, axis=0)
+                list_images = [i.reshape(1, i.shape[0], i.shape[1]) for i in 
+                              list_images]
+                stacked = np.stack(list_images, axis=3)
                 self._stacked_images = stacked
 #             self._images = [i.gray_image for i in images]
 #             self._stacked_images = np.stack(self._images, axis=0)
