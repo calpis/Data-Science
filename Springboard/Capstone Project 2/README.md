@@ -12,12 +12,15 @@ This is very similar to how AlphaGo was trained to play the game of Go.
 Data
 =====
 The flappy bird game is available to emulate via the Pygame-Learning-Environment, and there is a wrapper class available here. Together this will deal with the different termination requirements such as hitting any of the objects in the game, and provide rewards for certain action
+
 Client
 ======
 One possible client who may be interested in the results of this work is game designers/creators/testers.  The model could open up and enlighten customers of the game to new strategies, which can possibly help clients come up with ways to improve or make the game more difficult and enjoyable for the public.
+
 Deliverables
 ======
 The deliverables for this project will be the CNN and DQN models, a slidedeck presentation of the different steps taken to train these models
+
 Notebook Descriptions
 ======
 *data_wrangling.ipynb*: Initial data analysis is done here. There are visualizations to understand the representation of the game, data wrangling, and data generation.
